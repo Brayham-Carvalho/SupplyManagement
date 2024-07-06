@@ -19,7 +19,7 @@ async function bootstrap() {
 Use <a href="/graphql" target="_blank">/graphql</a>.
 ou,
 Você também pode precisar usar o <a target="_blank" href="http://studio.apollographql.com/sandbox/explorer?endpoint=http://localhost:3000/graphql&document=query items{items{id  }}
-">Apollo explorer</a> para uma melhor experiência.
+">Apollo explorer</a> para uma melhor experiência!
 
       `,
     )

@@ -1,5 +1,15 @@
 # Projeto Boilerplate README
 
+# Sistema de Controle de Estoque
+
+Este projeto é um sistema de controle de estoque que permite o cadastro e gerenciamento de produtos, filiais e distribuidoras.
+
+## Funcionalidades
+
+- **Cadastro de Produtos:** Permite adicionar, editar e remover produtos do sistema.
+- **Cadastro de Filiais:** Permite adicionar, editar e remover filiais.
+- **Cadastro de Distribuidoras:** Permite adicionar, editar e remover distribuidoras.
+
 ## Visão Geral
 
 Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangente projetado para iniciar seu desenvolvimento com uma pilha de tecnologia poderosa e versátil. Ele combina o melhor de Next.js, NestJS, Prisma e várias bibliotecas de UI e formulários, fornecendo uma base sólida para a construção de aplicações web modernas e robustas.
