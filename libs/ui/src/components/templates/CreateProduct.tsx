@@ -32,7 +32,7 @@ export const CreateProduct = ({
 
   return (
     <div>
-      <Title className="mb-2 text-lg font-semibold">Create product</Title>{' '}
+      <Title className="mb-2 text-lg font-semibold">Cadastrar Produto</Title>{' '}
       <form
         onSubmit={handleSubmit(async ({ name, description, image }) => {
           const images = await uploadImages(image)
@@ -78,12 +78,12 @@ export const CreateProduct = ({
         </div>
 
         <div className="flex-grow space-y-2">
-          <Input {...register('name')} placeholder="Product name" />
+          <Input {...register('name')} placeholder="Nome do Produto" />
           <Textarea
             {...register('description')}
-            placeholder="Product description"
+            placeholder="Descrição do produto"
           />
-          <Button type="submit">Create product</Button>
+          <Button type="submit">Salvar produto</Button>
         </div>
       </form>
     </div>

@@ -1,20 +1,20 @@
-# Boilerplate Project README
+# Projeto Boilerplate README
 
-## Overview
+## Visão Geral
 
-Welcome to the Full-Stack Boilerplate Project! This project is a comprehensive template designed to jumpstart your development with a powerful and versatile tech stack. It combines the best of Next.js, NestJS, Prisma, and various UI and form libraries, providing a solid foundation for building robust, modern web applications.
+Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangente projetado para iniciar seu desenvolvimento com uma pilha de tecnologia poderosa e versátil. Ele combina o melhor de Next.js, NestJS, Prisma e várias bibliotecas de UI e formulários, fornecendo uma base sólida para a construção de aplicações web modernas e robustas.
 
-## Key Features
+## Principais Recursos
 
-- **Next.js**: A cutting-edge version 14 using the latest React 18 features.
-- **NextAuth**: The authentication system for Next.js applications.
-- **Dark Mode Toggle**: Built-in support for light and dark themes, enhancing the user interface.
-- **NestJS**: A progressive Node.js framework for scalable server-side applications.
-- **GraphQL & REST API Support**: Flexibility to use GraphQL or REST APIs or both according to your project needs.
-- **Prisma**: Modern ORM for Node.js and TypeScript.
-- **UI Libraries**: Integrated Shadcn UI and Tailwind CSS for crafting beautiful, responsive user interfaces.
-- **Form Handling**: Utilizes Zod for schema validation and React Hook Form for efficient form management.
-- **GraphQL Codegen**: Streamlines your workflow by automatically generating code from your GraphQL schema.
+- **Next.js**: Uma versão avançada 14 utilizando os recursos mais recentes do React 18.
+- **NextAuth**: O sistema de autenticação para aplicações Next.js
+- **Alternância de Modo Escuro:**: Suporte embutido para temas claros e escuros, aprimorando a interface do usuário.
+- **NestJS**: Um framework Node.js progressivo para aplicações do lado do servidor escaláveis.
+- **Suporte a GraphQL e REST API**: Flexibilidade para usar GraphQL ou REST APIs ou ambos conforme as necessidades do seu projeto.
+- **Prisma**: ORM moderno para Node.js e TypeScript.
+- **Bibliotecas de UI**: Integração do Shadcn UI e Tailwind CSS para criar interfaces de usuário bonitas e responsivas.
+- **Manipulação de Formulários**: Utiliza Zod para validação de esquema e React Hook Form para gestão eficiente de formulários.
+- **GraphQL Codegen**: Simplifica seu fluxo de trabalho gerando automaticamente código a partir do seu esquema GraphQL.
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ Welcome to the Full-Stack Boilerplate Project! This project is a comprehensive t
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/karthickthankyou/supply-chain-x-workshop
+   git clone https://github.com/Brayham-Carvalho/SistemaDeEstoqueWeb.git
    ```
 
 2. **Install the dependencies**
@@ -45,11 +45,13 @@ Welcome to the Full-Stack Boilerplate Project! This project is a comprehensive t
    ```
 
 4. **Build applications and libraries**
+
    ```bash
    pnpm build
 
    pnpm nx connect
    ```
+
 5. **Run development servers**
 
    ```

@@ -4,7 +4,7 @@ import { formSchemaUpsertInventory } from '@foundation/forms/src/schemas'
 
 import { revalidateTag } from 'next/cache'
 
-import { redirect } from 'next/navigation'
+// Removida a importação não utilizada 'redirect'
 
 import { fetchGraphQLServer } from '../fetch/server'
 import { getAuth } from '../auth/authOptions'

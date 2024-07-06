@@ -15,7 +15,11 @@ export async function createManufacturer({ uid }: { uid: string }) {
     },
   })
 
+  // Verifica se a operação foi bem-sucedida
   if (data?.createManufacturer) {
     revalidateTag(namedOperations.Query.Manufacturer)
+  } else if (error) {
+    console.error('Erro ao criar fabricante:', error)
+    // Aqui você pode adicionar mais lógica de tratamento de erro conforme necessário
   }
 }

@@ -8,16 +8,16 @@ export interface IDeveloperInfoProps extends BaseComponent {}
 export const DeveloperInfo = ({ className }: IDeveloperInfoProps) => {
   return (
     <Link
-      href="https://www.iamkarthick.com"
+      href="https://github.com/Brayham-Carvalho"
       target="_blank"
       className={cn('text-xs group ', className)}
     >
       <div className="flex items-center gap-1 group-hover:underline underline-offset-4">
-        Made with
+        Desenvolvido por
         <Heart
           className={`inline w-3 h-3 group-hover:fill-red-600 group-hover:w-4 group-hover:h-4 transition-none`}
         />
-        by Karthick Ragavendran
+        Brayham Carvalho
       </div>
     </Link>
   )

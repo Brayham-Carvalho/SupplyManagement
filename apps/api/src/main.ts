@@ -12,14 +12,14 @@ async function bootstrap() {
   console.log('add ', add(3, 4))
 
   const config = new DocumentBuilder()
-    .setTitle('Supply Chain X | Karthick Ragavendran')
+    .setTitle('Sys Controle | Brayham Carvalho')
     .setDescription(
-      `Looking for the graphql api?
+      `Procurando pela API GraphQL?
       <br/>
-Go to <a href="/graphql" target="_blank">/graphql</a>.
-Or,
-You might also need to use the <a target="_blank" href="http://studio.apollographql.com/sandbox/explorer?endpoint=http://localhost:3000/graphql&document=query items{items{id  }}
-">Apollo explorer</a> for a greater experience.
+Use <a href="/graphql" target="_blank">/graphql</a>.
+ou,
+Você também pode precisar usar o <a target="_blank" href="http://studio.apollographql.com/sandbox/explorer?endpoint=http://localhost:3000/graphql&document=query items{items{id  }}
+">Apollo explorer</a> para uma melhor experiência.
 
       `,
     )

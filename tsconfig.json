@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
-    "strict": true
+    "target": "ESNext", // Mantém a configuração de destino como ESNext
+    "module": "CommonJS", // Usa CommonJS para módulos
+    "strict": true, // Habilita verificações estritas
+    "jsx": "react", // Adiciona suporte para JSX
+    "esModuleInterop": true, // Permite a interoperabilidade de módulos ES6 com módulos CommonJS
+    "skipLibCheck": true, // Pula a checagem de tipos nas declarações de bibliotecas
+    "lib": ["dom", "esnext"] // Inclui bibliotecas para o DOM e ESNext
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"] // Exclui node_modules da compilação
 }
