@@ -13,7 +13,7 @@ export default async function EmployerPage() {
   if (!user?.user?.uid) {
     return <Link href="/api/auth/signin">Login</Link>
   }
-  // Passing data between a parent layout and its children is not possible. However, you can fetch the same data in a route more than once, and React will automatically dedupe the requests without affecting performance.
+  // Passar dados entre um layout pai e seus filhos não é possível. No entanto, você pode buscar os mesmos dados em uma rota mais de uma vez, e o React irá automaticamente eliminar as duplicatas das requisições sem afetar o desempenho.
   const { data, error } = await fetchGraphQLServer({
     document: ManufacturerDocument,
     variables: { where: { uid: user.user.uid } },
@@ -27,8 +27,8 @@ export default async function EmployerPage() {
   console.log(data, error)
 
   if (!data?.manufacturer) {
-    // This condition should not technically happen as we check this in layout file. But right now there is no way of passing the data fetched in layout to the page.
-    return <div>Manufacturer account not found.</div>
+    // Esta condição tecnicamente não deveria acontecer, pois verificamos isso no arquivo de layout. Mas, no momento, não há como passar os dados buscados no layout para a página.
+    return <div>Conta do fabricante não encontrada.</div>
   }
 
   return <ManufacturerDashboard manufacturer={data.manufacturer} />

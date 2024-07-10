@@ -4,13 +4,14 @@ import { getFirestore } from 'firebase/firestore'
 import { getStorage } from 'firebase/storage'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCQA1-VONk37GRAlCWSB9L-m0ofEmiWVzo',
-  authDomain: 'supplychainx.firebaseapp.com',
-  projectId: 'supplychainx',
-  storageBucket: 'supplychainx.appspot.com',
-  messagingSenderId: '696183481416',
-  appId: '1:696183481416:web:32f35b7f6a5973cfb2647d',
-  measurementId: 'G-8L9FGK1X8S',
+  apiKey:
+    '292504206656-tv0f0bpopt0r6jon6ur2cgoqjfh6evsg.apps.googleusercontent.com',
+  authDomain: 'controleestoque.firebaseapp.com',
+  projectId: 'project-343289254826',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: '',
 }
 
 // Initialize Firebase

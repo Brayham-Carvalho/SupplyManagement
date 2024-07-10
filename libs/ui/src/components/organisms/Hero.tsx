@@ -15,20 +15,20 @@ export const HeroBanner = () => {
         </p>
         <div className="flex gap-4 my-4">
           <HeroLink Icon={Factory} url={'/manufacturer'}>
-            Manufacturer
+            Fabricante
           </HeroLink>
           <HeroLink Icon={Warehouse} url={'/distributor'}>
-            Distributer
+            Distribuidora
           </HeroLink>
           <HeroLink Icon={Store} url={'/retailer'}>
-            Retailer
+            Varejista
           </HeroLink>
         </div>
         <Link
           href="/register"
           className={buttonVariants({ variant: 'outline' })}
         >
-          Register
+          Registre-se
         </Link>
       </div>
     </div>
