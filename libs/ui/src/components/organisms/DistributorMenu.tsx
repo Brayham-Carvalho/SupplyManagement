@@ -24,7 +24,7 @@ export const DistributorMenu = ({ distributor }: DistributorQuery) => {
 
       <div className="flex flex-col gap-2">
         <Link href="/distributor">Dashboard</Link>
-        <Link href="/distributor/warehouses">Manage Warehouses</Link>
+        <Link href="/distributor/warehouses">Gerenciar armazéns</Link>
         {distributor?.warehouses.map((warehouse) => (
           <Link
             href={`/distributor/warehouses/${warehouse.id}`}

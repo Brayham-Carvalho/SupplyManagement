@@ -20,7 +20,7 @@ export const CreateDistributorAccount = ({ uid }: { uid: string }) => {
   }, [uid])
 
   if (isCreating) {
-    return <div>Creating Distributor account...</div>
+    return <div>Criando cadastro de Distribuidora...</div>
   }
 
   return null

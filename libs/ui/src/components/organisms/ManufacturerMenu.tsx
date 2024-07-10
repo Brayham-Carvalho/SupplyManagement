@@ -10,7 +10,7 @@ export const ManufacturerMenu = ({ manufacturer }: ManufacturerQuery) => {
 
       <div className="flex flex-col gap-2">
         <Link href="/manufacturer">Dashboard</Link>
-        <Link href="/manufacturer/products">Manage Products</Link>
+        <Link href="/manufacturer/products">Gerenciar produtos</Link>
         {manufacturer?.products.map((product) => (
           <Link
             href={`/manufacturer/products/${product.id}`}
@@ -19,7 +19,7 @@ export const ManufacturerMenu = ({ manufacturer }: ManufacturerQuery) => {
             {product.name}
           </Link>
         ))}
-        <Link href="/manufacturer/warehouses">Manage Warehouses</Link>
+        <Link href="/manufacturer/warehouses">Gerenciar armazéns</Link>
         {manufacturer?.warehouses.map((warehouse) => (
           <Link
             href={`/manufacturer/warehouses/${warehouse.id}`}

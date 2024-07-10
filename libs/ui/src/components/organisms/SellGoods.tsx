@@ -28,7 +28,7 @@ export const SellGoods = ({
     <SimpleDialog
       close={close}
       buttonText={
-        <div className=" hover:underline underline-offset-4">Sell</div>
+        <div className=" hover:underline underline-offset-4">Vender</div>
       }
     >
       <div>{inventory.product.name}</div>

@@ -13,7 +13,7 @@ export const Sidebar = ({ children }: BaseComponent) => {
   const [open, setOpen] = useDialogState()
 
   if (!session.data?.user) {
-    return <Link href="/signIn">Sign In</Link>
+    return <Link href="/signIn">Entrar</Link>
   }
 
   return (

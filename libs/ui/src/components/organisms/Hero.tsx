@@ -8,11 +8,10 @@ export const HeroBanner = () => {
     <div className="flex h-screen mt-32 ">
       <div>
         <h1 className="max-w-xl mb-4 text-5xl">
-          Empowering Your <span className="">Supply Chain</span> Journey
+          Agilizando sua <span className="">Cadeia de Suprimentos</span>
         </h1>
         <p className="max-w-md mb-8 text-xl">
-          Connect, collaborate, and optimize your supply chain with
-          SupplyChainX.
+          Conecte, colabore e otimize sua cadeia de suprimentos
         </p>
         <div className="flex gap-4 my-4">
           <HeroLink Icon={Factory} url={'/manufacturer'}>

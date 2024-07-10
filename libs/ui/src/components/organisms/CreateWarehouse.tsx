@@ -84,7 +84,7 @@ export const CreateWarehouseContent = ({
         })}
         className="space-y-2"
       >
-        <h1 className="mb-2 text-lg font-semibold">Create warehouse</h1>{' '}
+        <h1 className="mb-2 text-lg font-semibold">Criar Armazém</h1>{' '}
         <Input {...register('name')} placeholder="Warehouse name" />
         <Textarea
           {...register('description')}
@@ -94,7 +94,7 @@ export const CreateWarehouseContent = ({
           {...register('address.address')}
           placeholder="Warehouse address"
         />
-        <button type="submit">Create warehouse</button>
+        <button type="submit">Criar Armazém</button>
       </form>
       <Map initialViewState={initialViewState}>
         <MapMarker initialLocation={initialViewState} />

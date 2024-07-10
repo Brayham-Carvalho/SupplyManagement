@@ -20,7 +20,7 @@ export const CreateRetailerAccount = ({ uid }: { uid: string }) => {
   }, [uid])
 
   if (isCreating) {
-    return <div>Creating Retailer account...</div>
+    return <div>Criando Cadastro de Varejista...</div>
   }
 
   return null

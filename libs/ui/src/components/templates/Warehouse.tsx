@@ -20,12 +20,12 @@ export const Warehouse = ({
 
       <div>
         <div className="flex items-center gap-2 mt-4 mb-2 ">
-          <div className="font-semibold">Inventory</div>
+          <div className="font-semibold">Catálogo</div>
           {showUpsertInventory ? (
             <UpsertInventory warehouse={warehouse} />
           ) : null}
         </div>
-        {warehouse.inventories.length === 0 ? <div>Empty.</div> : null}
+        {warehouse.inventories.length === 0 ? <div>Vazio.</div> : null}
         <div className="flex flex-wrap gap-4">
           {warehouse.inventories.map((inventory) => (
             <InventoryCard

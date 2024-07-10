@@ -21,7 +21,7 @@ export default async function WarehousesPage() {
     <div>
       <div className="flex justify-between mb-6">
         <div>Products</div>
-        <Link href="/manufacturer/products/new">New</Link>
+        <Link href="/manufacturer/products/new">Novo</Link>
       </div>
       <div>{data?.myProducts.length === 0 ? 'No products' : null}</div>
       <div className="grid grid-cols-3 gap-4">

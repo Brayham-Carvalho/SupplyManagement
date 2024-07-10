@@ -22,7 +22,7 @@ export const CreateManufacturerAccount = ({ uid }: { uid: string }) => {
   }, [uid])
 
   if (isCreating) {
-    return <div>Creating manufacturer account...</div>
+    return <div>Criando Cadastro de Fabricante...</div>
   }
 
   return null

@@ -37,13 +37,13 @@ export const SignIn = () => {
           />
         </Label>
 
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Cadastrar</Button>
       </form>
       <div className="flex flex-col items-center gap-2 my-6">
         <div>
-          New to application?{' '}
+          Primeira vez?{' '}
           <Link href="/register" className="font-semibold">
-            Register.
+            Registre-se.
           </Link>
         </div>
         <div className="h-[1px] bg-black/20 w-36 my-2" />

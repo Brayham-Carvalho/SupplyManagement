@@ -44,7 +44,7 @@ export const SelectProducts = ({
   }, [manufacturerId])
 
   if (isLoading) {
-    return <p>Loading products...</p>
+    return <p>Carregando Produtos...</p>
   }
 
   return (
@@ -52,7 +52,7 @@ export const SelectProducts = ({
       onChange={(event) => onSelect(Number(event.target.value))}
       className="w-full px-3 py-2 border rounded border-input"
     >
-      <option value="">Select a product...</option>
+      <option value="">Selecione um produto...</option>
       {products?.map((product) => (
         <option key={product.id} value={product.id}>
           {product.name}

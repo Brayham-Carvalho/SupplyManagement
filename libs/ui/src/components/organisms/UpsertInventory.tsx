@@ -66,7 +66,7 @@ export const UpsertInventory = ({
             value={warehouse.id}
           />
         </Label>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Salvar</Button>
       </form>
     </SimpleDialog>
   )

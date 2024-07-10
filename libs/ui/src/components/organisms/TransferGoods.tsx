@@ -29,7 +29,7 @@ export const TransferGoods = ({
     <SimpleDialog
       close={close}
       buttonText={
-        <div className=" hover:underline underline-offset-4">Transfer</div>
+        <div className=" hover:underline underline-offset-4">Transferir</div>
       }
     >
       <div>{inventory.product.name}</div>
@@ -79,7 +79,7 @@ export const TransferGoods = ({
         <Label title="Target Warehouse ID">
           <Input {...register('toWarehouseId', { valueAsNumber: true })} />
         </Label>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Salvar</Button>
       </form>
     </SimpleDialog>
   )

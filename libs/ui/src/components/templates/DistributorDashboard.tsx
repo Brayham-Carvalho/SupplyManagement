@@ -8,7 +8,7 @@ export const DistributorDashboard = ({ distributor }: DistributorQuery) => {
       <div>{distributor?.uid}</div>
       <div className="flex gap-2 mt-4">
         <StatCard
-          title={'Warehouses'}
+          title={'Armazéns'}
           href={'/distributor/warehouses'}
           count={distributor?.warehouses.length}
         />

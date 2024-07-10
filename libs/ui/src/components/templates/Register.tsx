@@ -17,7 +17,7 @@ export const Register = () => {
   } = useFormRegister()
 
   return (
-    <AuthLayout title="Regiter">
+    <AuthLayout title="Regitrar">
       <form
         className="flex flex-col gap-2"
         onSubmit={handleSubmit(async (formData) => {
@@ -45,11 +45,11 @@ export const Register = () => {
         <Label title="Email" error={errors.email?.message}>
           <Input
             className="block px-2 py-1 border rounded"
-            placeholder="Enter the email"
+            placeholder="Insira o email"
             {...register('email')}
           />
         </Label>
-        <Label title="Password" error={errors.password?.message}>
+        <Label title="Senha" error={errors.password?.message}>
           <Input
             placeholder="******"
             className="block px-2 py-1 border rounded"
@@ -57,20 +57,20 @@ export const Register = () => {
             {...register('password')}
           />
         </Label>
-        <Label title="Name" error={errors.name?.message}>
+        <Label title="Nome" error={errors.name?.message}>
           <Input
-            placeholder="Enter the name"
+            placeholder="Insira o nome"
             className="block px-2 py-1 border rounded"
             {...register('name')}
           />
         </Label>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Cadastrar</Button>
       </form>
       <div className="flex flex-col items-center gap-2 my-6">
         <div>
-          Already have an account?{' '}
+          Possui uma conta?{' '}
           <Link href="/signIn" className="font-semibold">
-            Signin?
+            Entre?
           </Link>
         </div>
         <div className="h-[1px] bg-black/20 w-36 my-2" />

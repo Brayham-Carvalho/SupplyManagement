@@ -126,7 +126,7 @@ export const ProductFlow = ({
 }) => {
   return (
     <div>
-      <Title2>Product flow</Title2>
+      <Title2>Fluxo do produto</Title2>
       <WorldMap
         initialViewState={{
           bounds: calculateBounds(product?.transactions || []),

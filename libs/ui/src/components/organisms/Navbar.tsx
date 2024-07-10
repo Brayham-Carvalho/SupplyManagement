@@ -20,24 +20,24 @@ export const Navbar = () => {
             <div className="flex flex-col gap-2 mt-4 mb-8">
               <Link href="/manufacturer">
                 <div className="flex items-center gap-2">
-                  <Factory className="w-4 h-4" /> Manufacturer
+                  <Factory className="w-4 h-4" /> Fabricante
                 </div>
               </Link>
               <Link href="/distributor">
                 <div className="flex items-center gap-2">
-                  <Warehouse className="w-4 h-4" /> Distributor
+                  <Warehouse className="w-4 h-4" /> Distribuidora
                 </div>
               </Link>
               <Link href="/retailer">
                 <div className="flex items-center gap-2">
-                  <Store className="w-4 h-4" /> Retailer
+                  <Store className="w-4 h-4" /> Varejista
                 </div>
               </Link>
             </div>
 
             <SheetFooter>
               <SheetClose asChild>
-                <Link href="/api/auth/signout">Signout</Link>
+                <Link href="/api/auth/signout">Sair</Link>
               </SheetClose>
             </SheetFooter>
           </Sidebar>
