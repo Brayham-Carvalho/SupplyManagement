@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default async function CreateWarehousePage() {
   const user = await getAuth()
   if (!user?.user) {
-    return <Link href="/signin">Sign in</Link>
+    return <Link href="/signin">Login</Link>
   }
   return (
     <CreateWarehouse

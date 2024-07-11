@@ -24,6 +24,7 @@ import {
 import { Textarea } from '../atoms/textArea'
 import { revalidate } from '@foundation/network/src/actions/revalidate'
 import { useRouter } from 'next/navigation'
+import { Button } from '../atoms/button'
 
 interface ICreateWarehouse {
   warehouseRole: {
@@ -85,16 +86,16 @@ export const CreateWarehouseContent = ({
         className="space-y-2"
       >
         <h1 className="mb-2 text-lg font-semibold">Criar Armazém</h1>{' '}
-        <Input {...register('name')} placeholder="Warehouse name" />
+        <Input {...register('name')} placeholder="Nome do Armazém" />
         <Textarea
           {...register('description')}
-          placeholder="Warehouse description"
+          placeholder="Descrição do Armazém"
         />
         <Textarea
           {...register('address.address')}
-          placeholder="Warehouse address"
+          placeholder="Endereço Armazém"
         />
-        <button type="submit">Criar Armazém</button>
+        <Button type="submit">Criar Armazém</Button>
       </form>
       <Map initialViewState={initialViewState}>
         <MapMarker initialLocation={initialViewState} />

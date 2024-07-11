@@ -38,13 +38,13 @@ export const Warehouse = ({
       </div>
       {warehouse.ins.length ? (
         <div>
-          <div>Ins</div>
+          <div>Entradas</div>
           <TransactionsTable transactions={warehouse.ins} />
         </div>
       ) : null}
       {warehouse.outs.length ? (
         <div>
-          <div>Outs</div>
+          <div>Saídas</div>
           <TransactionsTable transactions={warehouse.outs} />
         </div>
       ) : null}

@@ -19,7 +19,7 @@ export const ManufacturerMenu = ({ manufacturer }: ManufacturerQuery) => {
             {product.name}
           </Link>
         ))}
-        <Link href="/manufacturer/warehouses">Gerenciar armazéns</Link>
+        <Link href="/manufacturer/warehouses">Gerenciar Armazéns</Link>
         {manufacturer?.warehouses.map((warehouse) => (
           <Link
             href={`/manufacturer/warehouses/${warehouse.id}`}

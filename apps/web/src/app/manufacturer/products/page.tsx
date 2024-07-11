@@ -20,7 +20,7 @@ export default async function WarehousesPage() {
   return (
     <div>
       <div className="flex justify-between mb-6">
-        <div>Products</div>
+        <div>Produtos</div>
         <Link href="/manufacturer/products/new">Novo</Link>
       </div>
       <div>{data?.myProducts.length === 0 ? 'No products' : null}</div>

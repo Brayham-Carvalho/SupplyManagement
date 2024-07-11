@@ -23,7 +23,7 @@ export default async function ProductPage({
   })
 
   if (!data?.warehouse) {
-    return <div>Warehouse not found.</div>
+    return <div>Armazém não encontrado.</div>
   }
 
   return <Warehouse warehouse={data.warehouse} showUpsertInventory />
