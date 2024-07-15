@@ -27,7 +27,7 @@ export function SearchLocation({
   return (
     <div className="relative">
       <Input
-        placeholder="Search place..."
+        placeholder="Pesquisar..."
         value={value}
         onChange={(e) => {
           setOpen(e.target.value.length > 0)

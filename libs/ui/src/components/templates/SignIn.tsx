@@ -37,7 +37,7 @@ export const SignIn = () => {
           />
         </Label>
 
-        <Button type="submit">Cadastrar</Button>
+        <Button type="submit">Entrar</Button>
       </form>
       <div className="flex flex-col items-center gap-2 my-6">
         <div>

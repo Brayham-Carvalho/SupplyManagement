@@ -16,7 +16,7 @@ export const Map = ({ height = 'calc(100vh - 4rem)', ...props }: IMapProps) => {
   return (
     <MapGl
       {...props}
-      mapStyle={'mapbox://styles/iamkarthick/clebahxqe001701mo1i1adtw3'}
+      mapStyle={'mapbox://styles/brayhamcarvalho/clyhbmkyd01jm01qo0j9z8z0h'}
       mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
       style={{ height }}
       pitch={22.5}

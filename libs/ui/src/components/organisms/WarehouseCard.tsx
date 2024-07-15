@@ -1,8 +1,9 @@
 import { MyWarehousesQuery } from '@foundation/network/src/queries/generated'
 
 import { format } from 'date-fns'
-import { MapLink } from '../molecules/MapLink'
+
 import { StaticMapSimple } from '../molecules/StaticMap'
+import { MapLink } from '../molecules/MapLink'
 
 export const WarehouseCard = ({
   warehouse,
