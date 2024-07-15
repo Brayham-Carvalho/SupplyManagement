@@ -25,7 +25,7 @@ export default async function ProductPage({
   })
 
   if (!data?.product) {
-    return <div>Product not found.</div>
+    return <div>Produto não encontrado.</div>
   }
 
   return (
