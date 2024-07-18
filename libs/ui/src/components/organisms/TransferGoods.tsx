@@ -14,6 +14,7 @@ import { Button } from '../atoms/button'
 import { fetchGraphQLClient } from '@foundation/network/src/fetch/client'
 import { SimpleDialog } from '../molecules/SimpleDialog'
 import { revalidate } from '@foundation/network/src/actions/revalidate'
+import { Title2 } from '../atoms/typography'
 
 export const TransferGoods = ({
   warehouseId,
@@ -32,8 +33,8 @@ export const TransferGoods = ({
         <div className=" hover:underline underline-offset-4">Transferir</div>
       }
     >
-      <div>{inventory.product.name}</div>
-      <div>{inventory.quantity}</div>
+      <Title2>{inventory.product.name}</Title2>
+      <Title2>{inventory.quantity}</Title2>
       <form
         onSubmit={handleSubmit(
           async ({ productId, quantity, fromWarehouseId, toWarehouseId }) => {
@@ -51,7 +52,7 @@ export const TransferGoods = ({
               revalidate(namedOperations.Query.myWarehouses)
             }
             if (error) {
-              alert('Transfer failed.')
+              alert('Transferência falhou.')
             }
 
             setClose(true)
@@ -59,25 +60,33 @@ export const TransferGoods = ({
           },
         )}
       >
-        <Label title="Quantity">
-          <Input {...register('quantity', { valueAsNumber: true })} />
-        </Label>
-        <Label title="Warehouse ID (readonly)">
+        <Label title="Quantidade">
           <Input
+            className="mb-3"
+            {...register('quantity', { valueAsNumber: true })}
+          />
+        </Label>
+        <Label title="ID do armazém (somente visuallização)">
+          <Input
+            className="mb-3"
             {...register('fromWarehouseId', { valueAsNumber: true })}
             readOnly
             value={warehouseId}
           />
         </Label>
-        <Label title="Product ID (readonly)">
+        <Label title="ID do produto (somente visuallização)">
           <Input
+            className="mb-3"
             {...register('productId', { valueAsNumber: true })}
             readOnly
             value={inventory.product.id}
           />
         </Label>
-        <Label title="Target Warehouse ID">
-          <Input {...register('toWarehouseId', { valueAsNumber: true })} />
+        <Label title="ID do Armazém de destino">
+          <Input
+            className="mb-3"
+            {...register('toWarehouseId', { valueAsNumber: true })}
+          />
         </Label>
         <Button type="submit">Salvar</Button>
       </form>

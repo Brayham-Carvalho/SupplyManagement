@@ -94,7 +94,7 @@ export class InventoriesService {
         warehouse.retailerId,
       ].includes(uid)
     ) {
-      throw new Error('Warehouse does not belong to you')
+      throw new Error('O armazém não pertence a você.')
     }
   }
 
@@ -120,7 +120,7 @@ export class InventoriesService {
       })
 
       if (!inventory) {
-        throw new Error('Inventory not found')
+        throw new Error('Catálogo não encontrado.')
       }
 
       const updatedInventory = await prisma.inventory.update({
@@ -157,31 +157,31 @@ export class InventoriesService {
         uid,
         warehouseId: fromWarehouseId,
       })
-      // 1. Check sender inventory
+      // 1. Verifica o catálogo do remetente
       const senderInventory = await prisma.inventory.findFirst({
         where: { productId, warehouseId: fromWarehouseId },
       })
 
       if (!senderInventory) {
-        throw new Error('Sender inventory does not exist')
+        throw new Error('O catálogo do remetente não existe.')
       }
 
       if (senderInventory.quantity < quantity) {
-        throw new Error('Insufficient inventory for transfer')
+        throw new Error('Estoque insuficiente para transferência.')
       }
 
-      // 2. Update sender inventory
+      // 2. Atualiza o catálogo do remetente
       await prisma.inventory.update({
         where: { id: senderInventory.id },
         data: { quantity: { decrement: quantity } },
       })
 
-      // 3. Check if receiver inventory exists
+      // 3. Verifique se existe estoque do receptor
       const receiverInventory = await prisma.inventory.findFirst({
         where: { productId, warehouseId: toWarehouseId },
       })
 
-      // 4. Update or create receiver inventory
+      // 4. Atualizar ou cria catálogo de destinatário
       if (receiverInventory) {
         await prisma.inventory.update({
           where: { id: receiverInventory.id },
@@ -206,7 +206,7 @@ export class InventoriesService {
         },
       })
 
-      // 5. Return sender inventory after successful transfer
+      // 5. Devolver o catálogo do remetente após transferência bem-sucedida
       return senderInventory
     })
   }

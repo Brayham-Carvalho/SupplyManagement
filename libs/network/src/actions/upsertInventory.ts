@@ -15,7 +15,7 @@ export async function upsertInventory(formData: FormTypeUpsertInventory) {
   const result = formSchemaUpsertInventory.safeParse(formData)
   const user = await getAuth()
   if (!user?.user?.uid) {
-    throw new Error('You are not logged in.')
+    throw new Error('Você não está logado.')
   }
   if (result.success) {
     const { productId, quantity, warehouseId } = result.data
@@ -35,7 +35,7 @@ export async function upsertInventory(formData: FormTypeUpsertInventory) {
       revalidateTag(namedOperations.Query.myWarehouses)
     }
     if (error) {
-      throw new Error('Something went wrong.')
+      throw new Error('Algo deu errado.')
     }
   } else {
     console.log(

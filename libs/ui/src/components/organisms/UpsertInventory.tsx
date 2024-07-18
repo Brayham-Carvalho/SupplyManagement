@@ -48,7 +48,7 @@ export const UpsertInventory = ({
           setClose(true)
         })}
       >
-        <Label title="Product" error={errors.productId?.message}>
+        <Label title="Produto" error={errors.productId?.message}>
           <SelectProducts
             onSelect={function (productId: number): void {
               setValue('productId', productId)
@@ -56,11 +56,15 @@ export const UpsertInventory = ({
             manufacturerId={warehouse.id}
           />
         </Label>
-        <Label title="Quantity">
-          <Input {...register('quantity', { valueAsNumber: true })} />
-        </Label>
-        <Label title="Warehouse ID (readonly)">
+        <Label title="Quantidade">
           <Input
+            className="mb-3"
+            {...register('quantity', { valueAsNumber: true })}
+          />
+        </Label>
+        <Label title="ID do armazém (somente visuallização)">
+          <Input
+            className="mb-3"
             {...register('warehouseId', { valueAsNumber: true })}
             readOnly
             value={warehouse.id}

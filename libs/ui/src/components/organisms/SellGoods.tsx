@@ -13,6 +13,7 @@ import { Button } from '../atoms/button'
 import { SimpleDialog } from '../molecules/SimpleDialog'
 import { fetchGraphQLClient } from '@foundation/network/src/fetch/client'
 import { revalidate } from '@foundation/network/src/actions/revalidate'
+import { Title2 } from '../atoms/typography'
 
 export const SellGoods = ({
   warehouseId,
@@ -31,8 +32,8 @@ export const SellGoods = ({
         <div className=" hover:underline underline-offset-4">Vender</div>
       }
     >
-      <div>{inventory.product.name}</div>
-      <div>{inventory.quantity}</div>
+      <Title2>{inventory.product.name}</Title2>
+      <Title2>{inventory.quantity}</Title2>
       <form
         onSubmit={handleSubmit(async ({ productId, quantity, warehouseId }) => {
           const { data, error } = await fetchGraphQLClient({
@@ -48,31 +49,36 @@ export const SellGoods = ({
             revalidate(namedOperations.Query.myWarehouses)
           }
           if (error) {
-            alert('Selling products failed.')
+            alert('A venda de produtos falhou.')
           }
 
           setClose(true)
           reset()
         })}
       >
-        <Label title="Quantity">
-          <Input {...register('quantity', { valueAsNumber: true })} />
-        </Label>
-        <Label title="Warehouse ID (readonly)">
+        <Label title="Quantidade">
           <Input
+            className="mb-3"
+            {...register('quantity', { valueAsNumber: true })}
+          />
+        </Label>
+        <Label title="ID do armazém (somente visuallização)">
+          <Input
+            className="mb-3"
             {...register('warehouseId', { valueAsNumber: true })}
             readOnly
             value={warehouseId}
           />
         </Label>
-        <Label title="Product ID (readonly)">
+        <Label title="ID do produto (somente visuallização)">
           <Input
+            className="mb-3"
             {...register('productId', { valueAsNumber: true })}
             readOnly
             value={inventory.product.id}
           />
         </Label>
-        <Button type="submit">Submit</Button>
+        <Button type="submit">Salvar</Button>
       </form>
     </SimpleDialog>
   )

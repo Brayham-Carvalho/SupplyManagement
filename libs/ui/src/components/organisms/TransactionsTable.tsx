@@ -8,6 +8,7 @@ import {
   TableRow,
 } from '../atoms/table'
 import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 
 export const TransactionsTable = ({
   transactions,
@@ -20,11 +21,11 @@ export const TransactionsTable = ({
         <TableHeader>
           <TableRow>
             <TableHead>ID</TableHead>
-            <TableHead>Date</TableHead>
-            <TableHead>Name</TableHead>
-            <TableHead>Quantity</TableHead>
-            <TableHead>From</TableHead>
-            <TableHead>To</TableHead>
+            <TableHead>Data</TableHead>
+            <TableHead>Nome</TableHead>
+            <TableHead>Quantidade</TableHead>
+            <TableHead>Origem</TableHead>
+            <TableHead>Destino</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -32,7 +33,9 @@ export const TransactionsTable = ({
             <TableRow key={transaction.id}>
               <TableCell>{transaction.id}</TableCell>
               <TableCell>
-                {format(new Date(transaction.createdAt), 'PPp')}
+                {format(new Date(transaction.createdAt), 'Pp', {
+                  locale: ptBR,
+                })}
               </TableCell>
               <TableCell>{transaction.product.name}</TableCell>
               <TableCell>{transaction.quantity}</TableCell>

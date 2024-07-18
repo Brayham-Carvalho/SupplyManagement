@@ -50,7 +50,7 @@ export const SelectProducts = ({
   return (
     <select
       onChange={(event) => onSelect(Number(event.target.value))}
-      className="w-full px-3 py-2 border rounded border-input"
+      className="w-full mb-3 px-3 py-2 border rounded border-input"
     >
       <option value="">Selecione um produto...</option>
       {products?.map((product) => (

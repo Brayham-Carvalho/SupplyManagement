@@ -4,6 +4,7 @@ import { UpsertInventory } from '../organisms/UpsertInventory'
 import { TransactionsTable } from '../organisms/TransactionsTable'
 import { InventoryCard } from '../organisms/InventoryCard'
 import { WarehouseDetails } from '../organisms/WarehouseDetails'
+import { Title2 } from '../atoms/typography'
 
 type WarehouseProps = {
   warehouse: MyWarehousesQuery['myWarehouses'][0]
@@ -19,7 +20,7 @@ export const Warehouse = ({
       <WarehouseDetails warehouse={warehouse} />
 
       <div>
-        <div className="flex items-center gap-2 mt-4 mb-2 ">
+        <div className="flex items-center gap-2 mt-4 mb-4 ">
           <div className="font-semibold">Catálogo</div>
           {showUpsertInventory ? (
             <UpsertInventory warehouse={warehouse} />
@@ -38,13 +39,13 @@ export const Warehouse = ({
       </div>
       {warehouse.ins.length ? (
         <div>
-          <div>Entradas</div>
+          <Title2>Entradas</Title2>
           <TransactionsTable transactions={warehouse.ins} />
         </div>
       ) : null}
       {warehouse.outs.length ? (
         <div>
-          <div>Saídas</div>
+          <Title2>Saídas</Title2>
           <TransactionsTable transactions={warehouse.outs} />
         </div>
       ) : null}
