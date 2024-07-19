@@ -3,6 +3,10 @@
 
 Este projeto é um sistema de gestão de suprimentos que permite o cadastro e gerenciamento de fabricantes, distribuidoras, varejistas e produtos.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1754e759-d21f-4e61-89e5-f323a9fa5305" width="200px" />
+</div>
+
 ## Funcionalidades
 
 - **Cadastro de Produtos:** Permite adicionar, editar e remover produtos do sistema.
@@ -27,21 +31,21 @@ Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangent
 
 ## Getting Started
 
-### Prerequisites
+### Pré Requisitos
 
 - Node.js
 - npm or yarn
 - Docker
 
-### Installation
+### Instalação
 
-1. **Clone the Repository**
+1. **Clonar Repositório**
 
    ```bash
    git clone https://github.com/Brayham-Carvalho/SistemaDeEstoqueWeb.git
    ```
 
-2. **Install the dependencies**
+2. **Instalação de dependencies**
 
    ```bash
    pnpm install
@@ -53,7 +57,7 @@ Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangent
    # Rename all .env.example to .env and populate the values.
    ```
 
-4. **Build applications and libraries**
+4. **Build aplicações e bibliotecas**
 
    ```bash
    pnpm build
