@@ -1,8 +1,7 @@
-# Projeto Boilerplate README
 
-# Sistema de Controle de Estoque
+# Sistema SupplyManagement
 
-Este projeto é um sistema de controle de estoque que permite o cadastro e gerenciamento de produtos, filiais e distribuidoras.
+Este projeto é um sistema de gestão de suprimentos que permite o cadastro e gerenciamento de fabricantes, distribuidoras, varejistas e produtos.
 
 ## Funcionalidades
 
