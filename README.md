@@ -4,14 +4,15 @@
 Este projeto é um sistema de gestão de suprimentos que permite o cadastro e gerenciamento de fabricantes, distribuidoras, varejistas e produtos.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/12b9515d-cf4e-4e84-9835-3f0b3cee8aad" width="800px" />
+  <img src="https://github.com/user-attachments/assets/d0bc8524-a10a-4304-86f6-163a85660d21" width="800px" />
 </div>
 
 ## Funcionalidades
 
-- **Cadastro de Produtos:** Permite adicionar, editar e remover produtos do sistema.
-- **Cadastro de Filiais:** Permite adicionar, editar e remover filiais.
+- **Cadastro de Produtos:** Permite adicionar, editar, remover e controlar o fluxo de tranferência de produtos do sistema de um armazém para outro.
+- **Cadastro de Varejistas:** Permite adicionar, editar e remover varejistas.
 - **Cadastro de Distribuidoras:** Permite adicionar, editar e remover distribuidoras.
+- **Cadastro de Fabricantes:** Permite adicionar, editar e remover fabricantes.
 
 ## Visão Geral
 
