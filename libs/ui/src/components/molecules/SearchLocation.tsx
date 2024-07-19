@@ -37,7 +37,7 @@ export function SearchLocation({
       />
       {open ? (
         <div className="">
-          {loading && <Loader />}
+          {loading && <Loader className="animate-spin" />}
           <div className="absolute z-10 mt-0.5 overflow-hidden rounded-lg top-full">
             {locationInfo.map((place) => (
               <button
