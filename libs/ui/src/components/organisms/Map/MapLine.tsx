@@ -59,7 +59,7 @@ export const MapLine: FunctionComponent<MapLineProps> = ({
           type="circle"
           source={`circleSource-${lineId}`}
           paint={{
-            'circle-radius': 4, // Size of the circle
+            'circle-radius': 8, // Size of the circle
             'circle-color': 'rgb(0,0,0)', // Color of the circle
           }}
         />

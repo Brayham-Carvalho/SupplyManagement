@@ -33,7 +33,7 @@ export const TransactionsTable = ({
             <TableRow key={transaction.id}>
               <TableCell>{transaction.id}</TableCell>
               <TableCell>
-                {format(new Date(transaction.createdAt), 'Pp', {
+                {format(new Date(transaction.createdAt), 'PPp', {
                   locale: ptBR,
                 })}
               </TableCell>

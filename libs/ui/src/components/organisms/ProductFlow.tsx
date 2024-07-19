@@ -126,13 +126,13 @@ export const ProductFlow = ({
 }) => {
   return (
     <div>
-      <Title2>Fluxo do produto</Title2>
+      <Title2>Fluxo do Produto</Title2>
       <WorldMap
         initialViewState={{
           bounds: calculateBounds(product?.transactions || []),
         }}
       >
-        <Panel position="right-center">
+        <Panel position="left-top">
           <DefaultZoomControls />
         </Panel>
         {product?.inventories.map((inventory) => (

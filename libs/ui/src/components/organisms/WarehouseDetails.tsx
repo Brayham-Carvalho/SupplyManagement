@@ -1,6 +1,7 @@
 import { MyWarehousesQuery } from '@foundation/network/src/queries/generated'
 
 import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 import { MapLink } from '../molecules/MapLink'
 import { StaticMapSimple } from '../molecules/StaticMap'
 
@@ -21,7 +22,9 @@ export const WarehouseDetails = ({
         <div className="mt-4 text-sm">{warehouse.description}</div>
         <div className="text-sm">{warehouse.location?.address}</div>
         <div className="text-sm text-gray">
-          {format(new Date(warehouse.createdAt), 'PP')}
+          {format(new Date(warehouse.createdAt), 'PPp', {
+            locale: ptBR,
+          })}
         </div>
       </div>{' '}
       <MapLink

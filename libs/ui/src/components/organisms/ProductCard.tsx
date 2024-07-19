@@ -1,5 +1,6 @@
 import { MyProductsQuery } from '@foundation/network/src/queries/generated'
 import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
 
 export const ProductCard = ({
   product,
@@ -23,7 +24,12 @@ export const ProductCard = ({
           {description && <p className="mt-2 text-gray-600">{description}</p>}
         </div>
         <div className="mt-2 text-sm text-gray-500">
-          <span> {format(new Date(createdAt), 'PP')}</span>
+          <span>
+            {' '}
+            {format(new Date(createdAt), 'PPp', {
+              locale: ptBR,
+            })}
+          </span>
         </div>
       </div>
     </div>
