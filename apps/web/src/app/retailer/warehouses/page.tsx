@@ -22,10 +22,12 @@ export default async function WarehousesPage() {
   return (
     <div>
       <div className="flex justify-between mb-6">
-        <div>Warehouses</div>
-        <Link href="/retailer/warehouses/new">New</Link>
+        <div>Armazéns</div>
+        <Link href="/retailer/warehouses/new">Novo</Link>
       </div>
-      {data?.myWarehouses.length === 0 ? <div>No warehouses found.</div> : null}
+      {data?.myWarehouses.length === 0 ? (
+        <div>Armazém não encontrado.</div>
+      ) : null}
       {data?.myWarehouses.map((warehouse) => (
         <Link
           href={`/distributor/warehouses/${warehouse.id}`}

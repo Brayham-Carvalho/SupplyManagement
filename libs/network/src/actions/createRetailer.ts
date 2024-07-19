@@ -19,6 +19,6 @@ export async function createRetailer({ uid }: { uid: string }) {
 
     revalidateTag(namedOperations.Query.retailer)
   } catch (error) {
-    throw new Error('Something went wrong')
+    throw new Error('Algo deu errado.')
   }
 }

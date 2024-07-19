@@ -29,7 +29,7 @@ export default async function DistributorPage() {
 
   if (!data?.retailer) {
     // This condition should not technically happen as we check this in layout file. But right now there is no way of passing the data fetched in layout to the page.
-    return <div>Retailer account not found.</div>
+    return <div>Varejista não encontrado.</div>
   }
 
   return <RetailerDashboard retailer={data?.retailer} />
