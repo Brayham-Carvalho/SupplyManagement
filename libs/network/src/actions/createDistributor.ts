@@ -22,6 +22,6 @@ export async function createDistributer({ uid }: { uid: string }) {
 
     revalidateTag(namedOperations.Query.distributor)
   } catch (error) {
-    throw new Error('Something went wrong')
+    throw new Error('Algo deu errado.')
   }
 }

@@ -10,7 +10,7 @@ export const DistributorMenu = ({ distributor }: DistributorQuery) => {
   return (
     <div className="flex flex-col w-full max-w-xs gap-2">
       <Image
-        src={distributor?.user.image || ''}
+        src={distributor?.user.image || '/no-image.jpeg'}
         alt=""
         width={300}
         height={300}

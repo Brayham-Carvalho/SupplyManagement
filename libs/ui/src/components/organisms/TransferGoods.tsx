@@ -33,8 +33,8 @@ export const TransferGoods = ({
         <div className=" hover:underline underline-offset-4">Transferir</div>
       }
     >
-      <Title2>{inventory.product.name}</Title2>
-      <Title2>{inventory.quantity}</Title2>
+      <Title2>Produto: {inventory.product.name}</Title2>
+      <Title2>Quantidade: {inventory.quantity}</Title2>
       <form
         onSubmit={handleSubmit(
           async ({ productId, quantity, fromWarehouseId, toWarehouseId }) => {
