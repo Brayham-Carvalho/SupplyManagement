@@ -4,7 +4,7 @@
 Este projeto é um sistema de gestão de suprimentos que permite o cadastro e gerenciamento de fabricantes, distribuidoras, varejistas e produtos.
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/1754e759-d21f-4e61-89e5-f323a9fa5305" width="200px" />
+  <img src="https://github.com/user-attachments/assets/12b9515d-cf4e-4e84-9835-3f0b3cee8aad" width="800px" />
 </div>
 
 ## Funcionalidades
