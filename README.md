@@ -18,11 +18,8 @@ Este projeto é um sistema de gestão de suprimentos que permite o cadastro e ge
 
 Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangente projetado para iniciar seu desenvolvimento com uma pilha de tecnologia poderosa e versátil. Ele combina o melhor de Next.js, NestJS, Prisma e várias bibliotecas de UI e formulários, fornecendo uma base sólida para a construção de aplicações web modernas e robustas.
 <div align="center">
-   <img src="https://github.com/user-attachments/assets/44ff4ec3-6dfd-4159-bbdc-c12bf2327374" width="800px" />
-  
+   <img src="https://github.com/user-attachments/assets/dc60ef5b-c656-4ae6-9c71-fd48e05a56b0" width="800px" />
 </div>
-
-
 
 ## Principais Recursos
 
