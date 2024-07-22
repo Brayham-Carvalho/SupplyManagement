@@ -14,7 +14,7 @@ export const SignIn = () => {
     formState: { errors },
   } = useFormSignIn()
   return (
-    <AuthLayout title="Sign In">
+    <AuthLayout title="Entrar">
       <form
         className="flex flex-col gap-2"
         onSubmit={handleSubmit((data) => {

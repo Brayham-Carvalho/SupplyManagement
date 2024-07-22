@@ -8,8 +8,8 @@ import { SessionProvider } from '@foundation/ui/src/components/molecules/Session
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sys Controle |Brayham Carvalho',
-  description: 'A base para seu monorepo.',
+  title: 'SupplyManagement | Brayham Carvalho',
+  description: 'A base para seu Monorepo.',
 }
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={inter.className}>
         <Container>
           <SessionProvider>

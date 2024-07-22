@@ -12,7 +12,7 @@ async function bootstrap() {
   console.log('add ', add(3, 4))
 
   const config = new DocumentBuilder()
-    .setTitle('Sys Controle | Brayham Carvalho')
+    .setTitle('SupplyManagement | Brayham Carvalho')
     .setDescription(
       `Procurando pela API GraphQL?
       <br/>
