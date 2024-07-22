@@ -1,18 +1,25 @@
-# Projeto Boilerplate README
 
-# Sistema de Controle de Estoque
+# Sistema SupplyManagement
 
-Este projeto é um sistema de controle de estoque que permite o cadastro e gerenciamento de produtos, filiais e distribuidoras.
+Este projeto é um sistema de gestão de suprimentos que permite o cadastro e gerenciamento de fabricantes, distribuidoras, varejistas e produtos.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d0bc8524-a10a-4304-86f6-163a85660d21" width="800px" />
+</div>
 
 ## Funcionalidades
 
-- **Cadastro de Produtos:** Permite adicionar, editar e remover produtos do sistema.
-- **Cadastro de Filiais:** Permite adicionar, editar e remover filiais.
+- **Cadastro de Produtos:** Permite adicionar, editar, remover e controlar o fluxo de tranferência de produtos do sistema de um armazém para outro.
+- **Cadastro de Varejistas:** Permite adicionar, editar e remover varejistas.
 - **Cadastro de Distribuidoras:** Permite adicionar, editar e remover distribuidoras.
+- **Cadastro de Fabricantes:** Permite adicionar, editar e remover fabricantes.
 
 ## Visão Geral
 
 Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangente projetado para iniciar seu desenvolvimento com uma pilha de tecnologia poderosa e versátil. Ele combina o melhor de Next.js, NestJS, Prisma e várias bibliotecas de UI e formulários, fornecendo uma base sólida para a construção de aplicações web modernas e robustas.
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/dc60ef5b-c656-4ae6-9c71-fd48e05a56b0" width="800px" />
+</div>
 
 ## Principais Recursos
 
@@ -28,21 +35,21 @@ Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangent
 
 ## Getting Started
 
-### Prerequisites
+### Pré Requisitos
 
 - Node.js
 - npm or yarn
 - Docker
 
-### Installation
+### Instalação
 
-1. **Clone the Repository**
+1. **Clonar Repositório**
 
    ```bash
    git clone https://github.com/Brayham-Carvalho/SistemaDeEstoqueWeb.git
    ```
 
-2. **Install the dependencies**
+2. **Instalação de dependencies**
 
    ```bash
    pnpm install
@@ -54,7 +61,7 @@ Bem-vindo ao Projeto Full-Stack Boilerplate! Este projeto é um modelo abrangent
    # Rename all .env.example to .env and populate the values.
    ```
 
-4. **Build applications and libraries**
+4. **Build aplicações e bibliotecas**
 
    ```bash
    pnpm build
